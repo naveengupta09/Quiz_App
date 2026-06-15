@@ -44,12 +44,12 @@ const App = () => {
           <DashboardPage />
         </RequireAuth>
       } />
+
+      <Route path="/list" element={<RequireAuth>
+        <ListPage />
+      </RequireAuth>} />
     </Routes>
   );
 }
 
 export default App;
-
-
-
-02:09:55
